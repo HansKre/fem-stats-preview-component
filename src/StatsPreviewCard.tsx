@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
         },
         display: "flex",
         flexDirection: "column",
+        '@media (max-height: 670px)': {
+            height: "unset",
+        },
     },
     headerImg: {
         minHeight: 181,
