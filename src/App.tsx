@@ -1,6 +1,8 @@
 import {Grid} from '@material-ui/core';
 import StatsPreviewCard from './StatsPreviewCard';
 import {makeStyles} from '@material-ui/core/styles';
+import CustomTheme from './Theme';
+import {ThemeProvider} from '@material-ui/core';
 
 const useStyles = makeStyles({
   fullHeight: {
@@ -11,9 +13,11 @@ const useStyles = makeStyles({
 function App() {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center" alignItems="center" className={classes.fullHeight}>
-      <StatsPreviewCard />
-    </Grid>
+    <ThemeProvider theme={CustomTheme}>
+      <Grid container justifyContent="center" alignItems="center" className={classes.fullHeight}>
+        <StatsPreviewCard />
+      </Grid>
+    </ThemeProvider>
   );
 }
 
