@@ -2,10 +2,10 @@ import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import headerImgMobile from './images/image-header-mobile.jpg';
-import headerImgDesktop from './images/image-header-desktop.jpg';
+import headerImgMobile from '../images/image-header-mobile.jpg';
+import headerImgDesktop from '../images/image-header-desktop.jpg';
 import {Grid} from '@material-ui/core';
-import useBreakPoint from './useBreakPoint';
+import useBreakPoint from '../hooks/useBreakPoint';
 
 const DESKTOP_IMAGE_DIMENSIONS = {
     width: 540,

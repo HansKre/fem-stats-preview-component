@@ -1,7 +1,7 @@
 import {Grid} from '@material-ui/core';
-import StatsPreviewCard from './StatsPreviewCard';
+import StatsPreviewCard from './components/StatsPreviewCard';
 import {makeStyles} from '@material-ui/core/styles';
-import CustomTheme from './Theme';
+import CustomTheme from './styles/Theme';
 import {ThemeProvider} from '@material-ui/core';
 
 const useStyles = makeStyles({
