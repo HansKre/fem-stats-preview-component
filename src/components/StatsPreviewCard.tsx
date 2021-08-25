@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
         "&.MuiPaper-rounded": {
             borderRadius: "5px"
         },
+        [theme.breakpoints.up('md')]: {
+            width: "40vw",
+            maxWidth: "40vw",
+        },
         [theme.breakpoints.up('lg')]: {
             // avoid growing bigger than hero-image which leads to white space around hero-image
             maxWidth: `${DESKTOP_IMAGE_DIMENSIONS.width * 2}px`,
@@ -39,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
         height: 181,
         background: `linear-gradient(to right, #660a9e80, #660a9e80), url(${headerImgMobile}) no-repeat top center`,
         backgroundSize: "cover",
+        [theme.breakpoints.up('md')]: {
+            height: "30vh",
+        },
         [theme.breakpoints.up('lg')]: {
             background: `linear-gradient(to right, #660a9e80, #660a9e80), url(${headerImgDesktop}) no-repeat top center`,
             height: `${DESKTOP_IMAGE_DIMENSIONS.height}px`,
@@ -81,6 +88,9 @@ const useStyles = makeStyles((theme) => ({
         color: "#FEFEFF",
         lineHeight: 1.2,
         marginTop: "13px",
+        [theme.breakpoints.up('md')]: {
+            fontSize: "2.4vw",
+        },
         [theme.breakpoints.up('lg')]: {
             fontSize: "36px",
         },
@@ -90,6 +100,9 @@ const useStyles = makeStyles((theme) => ({
         lineHeight: 1.3,
         marginTop: "22px",
         fontSize: "18px",
+        [theme.breakpoints.up('md')]: {
+            fontSize: "1.8vw",
+        },
         [theme.breakpoints.up('lg')]: {
             fontSize: "23px",
         }
@@ -104,6 +117,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "11px",
         paddingTop: "15px",
         lineHeight: "1.7",
+        [theme.breakpoints.up('md')]: {
+            fontSize: "1.2vw",
+        },
         [theme.breakpoints.up('lg')]: {
             paddingTop: "30px",
             fontSize: "15px",
@@ -113,6 +129,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "9px",
         paddingTop: "2px",
         letterSpacing: "0.1em",
+        [theme.breakpoints.up('md')]: {
+            fontSize: "1.1vw",
+        },
         [theme.breakpoints.up('lg')]: {
             fontSize: "12px",
         }
