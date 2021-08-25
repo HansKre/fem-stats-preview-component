@@ -4,10 +4,9 @@ import {Breakpoint} from '@material-ui/core/styles/createBreakpoints';
 
 type Limit = 'up' | 'down' | 'between' | 'only';
 
-function useBreakPoint(limit: Limit, breakpoint: Breakpoint): boolean {
+function useBreakPoint(limit: Limit, start: Breakpoint, end?: Breakpoint): boolean {
     const theme = useTheme();
-    const _limit = 'down'; // TODO: fixme
-    return useMediaQuery(theme.breakpoints[_limit](breakpoint));
+    return useMediaQuery(theme.breakpoints[limit](start, end || start));
 }
 
 export default useBreakPoint
