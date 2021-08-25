@@ -21,8 +21,10 @@ const useStyles = makeStyles((theme) => ({
             borderRadius: "5px"
         },
         [theme.breakpoints.up('lg')]: {
-            width: `${DESKTOP_IMAGE_DIMENSIONS.width * 2}px`,
+            // avoid growing bigger than hero-image which leads to white space around hero-image
             maxWidth: `${DESKTOP_IMAGE_DIMENSIONS.width * 2}px`,
+            // default size leaves margins: 15% left and 15% right. This also shrinks hero-image by cropping left and right equally
+            width: "70vw",
             height: `${DESKTOP_IMAGE_DIMENSIONS.height}px`,
             "&.MuiPaper-rounded": {
                 borderRadius: "10px"
