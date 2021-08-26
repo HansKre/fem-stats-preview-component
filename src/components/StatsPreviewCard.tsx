@@ -183,7 +183,7 @@ export default function StatsPreviewCard() {
     }
 
     function Title() {
-        return <Typography className={`${classes.h6} ${classes.bold}`} variant="h6">
+        return <Typography id="title" className={`${classes.h6} ${classes.bold}`} variant="h6">
             Get <Typography className={`${classes.h6} ${classes.bold} ${classes.highlightedText}`} variant="h6" component="span">insights</Typography> that help your business grow.
         </Typography>;
     }
