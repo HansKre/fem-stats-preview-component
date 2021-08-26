@@ -12,7 +12,8 @@ This is a solution to the [Stats Preview Card challenge on Frontend Mentor](http
     - [Solution Screenshot](#solution-screenshot)
     - [Built with](#built-with)
     - [Backlog](#backlog)
-    - [Useful resources](#useful-resources)
+    - [What I learned](#what-i-learned)
+      - [`testing-library`](#testing-library)
   - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -43,9 +44,11 @@ This is a solution to the [Stats Preview Card challenge on Frontend Mentor](http
 2. Implement desktop version
 3. add jest-tests
 
-### Useful resources
+### What I learned
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+#### `testing-library`
+
+- [Queries](https://testing-library.com/docs/queries/about/) - `getBy...`, `queryBy...`, `findBy...`
 
 ## Acknowledgments
 
