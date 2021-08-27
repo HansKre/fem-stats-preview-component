@@ -153,7 +153,7 @@ export default function StatsPreviewCard() {
 
     return (
         <Card className={classes.card} elevation={6} >
-            <Grid container direction={downMd ? "column" : "row"} wrap="nowrap" className={classes.gridContainer}>
+            <Grid id="mainGrid" container direction={downMd ? "column" : "row"} wrap="nowrap" className={classes.gridContainer}>
                 {downMd
                     ? <Grid item><HeroImage /></Grid>
                     : ''}
