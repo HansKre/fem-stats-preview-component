@@ -14,6 +14,8 @@ This is a solution to the [Stats Preview Card challenge on Frontend Mentor](http
     - [Backlog](#backlog)
     - [What I learned](#what-i-learned)
       - [`testing-library`](#testing-library)
+      - [`tsconfig.json`](#tsconfigjson)
+      - [Import type definitions in a `js` file](#import-type-definitions-in-a-js-file)
   - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -50,6 +52,26 @@ This is a solution to the [Stats Preview Card challenge on Frontend Mentor](http
 
 - [Queries](https://testing-library.com/docs/queries/about/) - `getBy...`, `queryBy...`, `findBy...`
 
+#### `tsconfig.json`
+
+- If `types` is specified, only packages listed will be included in the global scope. For instance:
+
+```json
+{
+  "compilerOptions": {
+    "types": ["node", "jest", "express"]
+  }
+}
+```
+
+This `tsconfig.json` file will only include `./node_modules/@types/node`, `./node_modules/@types/jest` and `./node_modules/@types/express`. Other packages under `node_modules/@types/*` will not be included.
+
+#### Import type definitions in a `js` file
+
+Add on top of the `js`-file:
+`/// <reference types="Cypress" />`
+
 ## Acknowledgments
 
-- inspirations, credits, etc.
+- [How to Test an Application that Changes a CSS Variable](https://www.cypress.io/blog/2020/03/17/how-to-test-an-application-that-changes-css-variable/)
+- [Visual Testing](https://docs.cypress.io/guides/tooling/visual-testing#Functional-vs-visual-testing)

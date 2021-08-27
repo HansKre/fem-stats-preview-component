@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('Responsiveness', () => {
     context('Desktop', () => {
         beforeEach(() => {
